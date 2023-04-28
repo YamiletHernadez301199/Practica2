@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practica2';
+  title = 'Cronometro';
+    public mensaje : string = '';
+    public actualizar(tiempo : number) : void {
+        this.mensaje ='Tiempo: '+ tiempo + ' (Se actualiza cada 10 segundos)';
+    }
 }
